@@ -148,7 +148,27 @@ h1 {
 .xm-menu.xm-menu-1 li a:hover, .xm-menu li.current a {
 	background: none;
 }
-
+.xm-menu.xm-menu-4 {
+	height: 40px;
+}
+.xm-menu-4 li.xm-top {
+	width: 16.6667%;
+	padding: 5px 0;
+	max-height: 30px;
+	text-align: left;
+}
+.xm-menu-4 li.xm-top a {
+	background: url('../images/slideshow-menu-divider-01.jpg') no-repeat right center transparent;
+	line-height: 13px;
+	text-transform: uppercase;
+	padding: 0 16px;
+	font-size: 12px;	
+}
+.xm-menu.xm-menu-4 li.current a, .xm-menu.xm-menu-4 li a:hover {
+	background-color: #000000;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0 #B9B9B9;
+}
 #footer .xm-menu li {
 	line-height: 22px;
 }
@@ -497,7 +517,9 @@ a.bread-crumb:active {
 .dialog .content li {
 	list-style: none;
 }
-
+#power_filter {
+	height: 52px;
+}
 #power_filter .filter_table h2 {
     color: #A52727;
     font-size: 12px;
@@ -517,7 +539,7 @@ a.bread-crumb:active {
 	padding: 0;
 	position: absolute;
 	right: 0;
-	top: -48px;
+	top: -73px;
 	width: 30%;
 }
 .dialog-category-products-list .title div.sort-box .search-sort-bar {
@@ -863,9 +885,20 @@ h3 {
 .product-properties .add-this-row button.button .button-right,
 .product-properties .add-this-row button.button .button-left{
  	background: none;
+ 	color: #718500;
 }
 .product-properties .add-this-row button.button .button-left:before {
 	content: "+";
+}
+.product-properties .add-this-row .review-link
+ {
+	color: #718500;
+    height: 21px;
+    line-height: 20px;
+    padding: 0 7px 0 15px;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
 }
 .product-properties .add-this-row button.button .button-left{
  	background: none;
@@ -1477,21 +1510,36 @@ div.drop-out-button {
 }
 
 .welcome-top {
-	height: 580px;
+	height: 621px;
     position: relative;
     width: 100%;
+}
+
+.welcome-top .banner-system {
+	margin: 0 0 1px 0;
 }
 .welcome-txt {
 	margin-top: 12px;
 	border-top: 2px solid #e0e0e0;
 	height: 80px;
-	padding: 20px;
+	padding: 20px 0;
 }
 .welcome-txt .text-box {
-	width: 50%;
+	width: 47.5%;
 	float:left;
 	font-size: 12.5px;
 	line-height: 22px;	
+	text-align: justify;
+}
+.welcome-txt .text-box:first-child {
+	padding-right: 5%;
+}
+.welcome-txt .text-box p {
+	margin: 0;
+}
+
+#slideshow3.banner-system {
+	margin-top: 12px;
 }
 
 .height-extender,
@@ -1735,6 +1783,16 @@ table.menu-columns {
 .products-table .products-row td.product-cell {
   padding-top: 60px;
 }
+.products-table .product-desinger-row .product-cell {
+	font-weight: bold;
+	color: #000000;
+	font-size: 12px;
+}
+.products-table .product-name-row .product-cell a{
+	font-weight: normal;
+	color: #000000;
+	font-size: 12px;
+}
 
 .products-table a.product-title:link,
 .products-table a.product-title:visited,
@@ -1913,8 +1971,20 @@ table.menu-columns {
   padding-bottom: 2px;
   padding-left: 0;
 }
-.fancycat-icons-c ul li ul {
-	margin-left: 15px;
+.fancycat-icons-c ul li ul li {
+	padding-left: 15px;
+}
+.menu-dialog .fancycat-icons-c ul li.current a {
+	color: #97a644;
+}
+.menu-dialog .fancycat-icons-c ul li.current li a {
+	color: #000000;
+}
+.menu-dialog .fancycat-icons-c ul li.current li.current {
+	background: url(../images/flyout-menu-current-01.jpg) scroll no-repeat left center transparent !important;
+}
+.menu-dialog .fancycat-icons-c ul li.current li.current a {
+	color: #97a644;
 }
 
 .fancycat-icons-c li a.arrow:link,
